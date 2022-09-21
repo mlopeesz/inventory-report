@@ -18,7 +18,9 @@ class SimpleReport:
             ]
         )
 
-        company_name = [product["nome_da_empresa"] for product in inventory_data]
+        company_name = [
+            product["nome_da_empresa"] for product in inventory_data
+        ]
 
         company_most_products = max(set(company_name), key=company_name.count)
 
